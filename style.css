@@ -1,1 +1,33 @@
- 
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: #333;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#taskInput {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
