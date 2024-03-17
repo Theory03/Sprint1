@@ -1,4 +1,4 @@
- // script.js
+// Function to add a new task
 function addTask() {
     const taskInput = document.getElementById("taskInput");
     const taskList = document.getElementById("taskList");
@@ -17,12 +17,13 @@ function addTask() {
     }
 }
 
+// Function to display task details
 function showTaskDetails(taskDetails) {
     const taskDetailsContainer = document.getElementById("taskDetails");
     taskDetailsContainer.textContent = `Selected Task: ${taskDetails}`;
 }
 
-// New function to remove tasks
+// Function to remove tasks
 function removeTask() {
     const taskList = document.getElementById("taskList");
     const selectedTask = document.querySelector("li.selected");
@@ -66,3 +67,20 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(removeButton);
 });
 
+// Function to change the theme
+function changeTheme() {
+    const themeSelect = document.getElementById("themeSelect");
+    const selectedTheme = themeSelect.value;
+
+    // Change the theme based on the selected option
+    document.body.className = selectedTheme;
+}
+
+// Function to change the font
+function changeFont() {
+    const fontSelect = document.getElementById("fontSelect");
+    const selectedFont = fontSelect.value;
+
+    // Change the font family based on the selected option
+    document.body.style.fontFamily = selectedFont;
+}
