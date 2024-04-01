@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Management App</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Include FullCalendar library -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.9.0/main.min.css" rel="stylesheet">
 </head>
 <body>
   <input type="text" id="taskInput" placeholder="Enter a task">
   <ul id="taskList"></ul>
   <div id="taskDetails"></div>
+  <!-- Calendar -->
+  <div id="calendar"></div>
   <select id="themeSelect" onchange="changeTheme()">
     <option value="theme-light">Light Theme</option>
     <option value="theme-dark">Dark Theme</option>
@@ -20,5 +24,17 @@
     <option value="Times New Roman">Times New Roman</option>
   </select>
   <script src="script.js"></script>
+  <!-- Include FullCalendar library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.9.0/main.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        // Configure calendar options here
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+  </script>
 </body>
 </html>

@@ -65,22 +65,40 @@ document.addEventListener("DOMContentLoaded", () => {
     removeButton.addEventListener("click", removeTask);
 
     document.body.appendChild(removeButton);
+
+    // Function to change the theme
+    function changeTheme() {
+        const themeSelect = document.getElementById("themeSelect");
+        const selectedTheme = themeSelect.value;
+
+        // Change the theme based on the selected option
+        document.body.className = selectedTheme;
+    }
+
+    // Function to change the font
+    function changeFont() {
+        const fontSelect = document.getElementById("fontSelect");
+        const selectedFont = fontSelect.value;
+
+        // Change the font family based on the selected option
+        document.body.style.fontFamily = selectedFont;
+    }
+
+    // Function to integrate calendar functionality
+    function integrateCalendar() {
+        // Your code to integrate the calendar functionality goes here
+        // This function should initialize and display the calendar as needed
+        // You may use external libraries such as FullCalendar.js to achieve this
+    }
+
+    // Function to provide collaborative features
+    function provideCollaborativeFeatures() {
+        // Your code to provide collaborative features goes here
+        // This function should implement any collaborative features you want to add
+        // For example, you can add real-time editing or sharing capabilities
+    }
+
+    // Call functions to integrate calendar and provide collaborative features
+    integrateCalendar();
+    provideCollaborativeFeatures();
 });
-
-// Function to change the theme
-function changeTheme() {
-    const themeSelect = document.getElementById("themeSelect");
-    const selectedTheme = themeSelect.value;
-
-    // Change the theme based on the selected option
-    document.body.className = selectedTheme;
-}
-
-// Function to change the font
-function changeFont() {
-    const fontSelect = document.getElementById("fontSelect");
-    const selectedFont = fontSelect.value;
-
-    // Change the font family based on the selected option
-    document.body.style.fontFamily = selectedFont;
-}

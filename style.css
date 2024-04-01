@@ -1,14 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .theme-light {
-    background-color: #2904fc;
-    color: #02ff81;
-  }
-  
-  .theme-dark {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+.theme-light {
+  background-color: #2904fc;
+  color: #02ff81;
+}
+
+.theme-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Additional styles for Sprint 3 */
+#taskInput {
+  margin-bottom: 10px;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+#taskDetails {
+  margin-top: 10px;
+}
+
+#themeSelect,
+#fontSelect {
+  margin-top: 10px;
+}
